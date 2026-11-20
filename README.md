@@ -1,4 +1,5 @@
-# Password Cracking | NetworkWalks Week 3
+
+## Password Cracking | NetworkWalks Week 3
 
 Hands-on password-cracking exercises using John the Ripper, Johnny GUI, and NetworkWalks online tools.
 
@@ -18,75 +19,58 @@ The project involved extracting hashes from password-protected PDF files, perfor
 ## PM1 - Password Cracking with John the Ripper
 
 ### Objective
-Recover passwords from three password-protected PDF files using John the Ripper and Johnny GUI.
+Recover passwords from password-protected PDF files using John the Ripper and Johnny GUI.
 
 ### Tools Used
 - John the Ripper (JTR)
 - Johnny GUI
 - Online PDF Hash Extractor
-- Notepad
 - PDF Reader
 
 ### Practical Steps
 1. Downloaded and configured John the Ripper and Johnny GUI.
-2. Configured Johnny by selecting the john.exe executable.
-3. Extracted the hashes from the three password-protected PDF files.
-4. Saved each extracted hash in a separate text file.
-5. Loaded the hash files into Johnny.
-6. Started the password-cracking process.
-7. Recovered the passwords and verified them by opening the protected PDF files.
+2. Extracted the hash from each password-protected PDF using an online PDF hash extractor.
+3. Saved each extracted hash and loaded it into Johnny.
+4. Started the password-cracking attack for each PDF.
+5. Recovered the passwords and verified them by opening the protected PDF files.
 
 ### Screenshots & Evidence
 
-**PDF 1 - MyLockedPDF1**
+**PDF 1**
 
-1. PDF Hash Extraction
+1. Hash Extraction
 
-[MyLockedPDF1 Hash](https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/screenshots/PM1-JTR/1.%20MyLockedPDF1%20Hash.png)
+[MyLockedPDF1 Hash](screenshots/PM1-JTR/hash1.jpg)
 
-2. Password Cracked and Flag Captured
+2. Password Cracked using Johnny (password: `password1`)
 
-[MyLockedPDF1 Result](https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/screenshots/PM1-JTR/2.%20MyLockedPDF1%20Password%20Cracked%20and%20Flag%20Captured.png)
+![PDF1 Johnny Result](screenshots/PM1-JTR/findpass1.jpg)
 
-3. Password Cracking using Johnny
+3. Password Verified — Flag Captured
 
-[MyLockedPDF1 Johnny](https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/screenshots/PM1-JTR/3.%20MYLockedPDF1%20Password%20Crack%20by%20Jhonny.png)
+[PDF1 Flag Captured](screenshots/PM1-JTR/locked1.jpg)
 
-**PDF 2 - MyLockedPDF2**
+**PDF 2**
 
-4. PDF Hash Extraction
+4. Hash Extraction
 
-[MyLockedPDF2 Hash](https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/screenshots/PM1-JTR/4.%20MyLockedPDF2%20Hash.png)
+[PDF2 Hash](screenshots/PM1-JTR/hash2.jpg)
 
-5. Password Cracking using Johnny
+5. Password Cracked using Johnny (password: `good-luck`)
 
-[MyLockedPDF2 Johnny](https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/screenshots/PM1-JTR/5.%20MyLockedPDF2%20Password%20Crack%20by%20Johnny.png)
+[PDF2 Johnny Result](screenshots/PM1-JTR/findpass2.jpg)
 
-6. Password Cracked and Flag Captured
+6. Password Verified — Flag Captured
 
-[MyLockedPDF2 Result](https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/screenshots/PM1-JTR/6.%20MyLockedPDF2%20Password%20Cracked%20and%20Flag%20Captured.png)
-
-**PDF 3 - MyLockedPDF3**
-
-7. PDF Hash Extraction
-
-[MyLockedPDF3 Hash](https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/screenshots/PM1-JTR/7.%20MyLockedPDF3%20Hash.png)
-
-8. Password Cracking using Johnny
-
-[MyLockedPDF3 Johnny](https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/screenshots/PM1-JTR/8.%20MyLockedPDF3%20Password%20Crack%20by%20Johnny.png)
-
-9. Password Cracked and Flag Captured
-
-[MyLockedPDF3 Result](https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/screenshots/PM1-JTR/9.%20MyLockedPDF3%20Password%20Cracked%20and%20Flag%20Captured.png)
+[PDF2 Flag Captured](screenshots/PM1-JTR/locked2.jpg)
 
 ### Result
-Successfully performed password cracking on all three protected PDF files using John the Ripper through Johnny GUI.
+Successfully performed password cracking on both protected PDF files using John the Ripper through Johnny GUI.
 
 ## PM2 - Password Cracking with NetworkWalks Tools
 
 ### Objective
-Recover the password of a protected PDF file using NetworkWalks Hash Calculator and Password Cracker.
+Recover the passwords of protected PDF files using the NetworkWalks Hash Calculator and Password Cracker.
 
 ### Tools Used
 - NetworkWalks Hash Calculator
@@ -95,31 +79,45 @@ Recover the password of a protected PDF file using NetworkWalks Hash Calculator 
 - PDF Reader
 
 ### Practical Steps
-1. Downloaded the password-protected PDF file.
-2. Uploaded the PDF to the NetworkWalks Hash Calculator.
-3. Extracted and copied the generated PDF hash.
-4. Submitted the hash to the NetworkWalks Password Cracker.
-5. Started the password-cracking process.
-6. Retrieved the recovered password.
-7. Verified the password by opening the protected PDF.
-8. Captured the completion flag.
+1. Uploaded each password-protected PDF to the NetworkWalks Hash Calculator.
+2. Extracted and copied the generated PDF hash.
+3. Submitted the hash to the NetworkWalks Password Cracker.
+4. Ran the dictionary attack until the password was found.
+5. Verified the password by opening the protected PDF.
+6. Captured the completion flag.
 
 ### Screenshots & Evidence
 
-1. PDF Hash Extraction
+**PDF (1st file)**
 
-[NW Hash](https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/screenshots/PM2-NW/1.%20NW-MyLockedPDF1%20Hash.png)
+1. Hash Extraction
 
-2. Password Cracking Result
+[Hash Calculator Result](screenshots/PM2-NW/PM2hash1.jpg)
 
-[NW Password Crack](https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/screenshots/PM2-NW/2.%20NW-MyLockedPDF1%20Password%20Crack.png)
+2. Password Cracked (password: `password1`)
+
+[Password Cracker Result](screenshots/PM2-NW/PM2findpass3.jpg)
 
 3. Flag Captured
 
-[NW Flag Captured](https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/screenshots/PM2-NW/3.%20NW-MyLockedPDF1%20Flag%20Captured.png)
+[Flag Captured](screenshots/PM2-NW/unlock1.jpg)
+
+**PDF (2nd file)**
+
+4. Hash Extraction
+
+[Hash Calculator Result](screenshots/PM2-NW/PM2hash2.jpg)
+
+5. Password Cracked (password: `1qaz2wsx`)
+
+[Password Cracker Result](screenshots/PM2-NW/PM2findpass4.jpg)
+
+6. Flag Captured
+
+[Flag Captured](screenshots/PM2-NW/unlock2.jpg)
 
 ### Result
-Successfully recovered the PDF password and captured the completion flag using NetworkWalks online tools.
+Successfully recovered both PDF passwords and captured the completion flags using NetworkWalks online tools.
 
 ## Key Learnings
 
@@ -127,8 +125,8 @@ Through these practical exercises, I gained experience in:
 
 - Extracting password hashes from protected PDF files.
 - Working with John the Ripper and Johnny GUI.
-- Understanding the password-cracking process.
-- Using online hash extraction tools.
+- Understanding the password-cracking process using dictionary attacks.
+- Using online hash extraction and calculation tools.
 - Performing password cracking with NetworkWalks tools.
 - Verifying recovered passwords.
 - Understanding the importance of strong password protection.
@@ -145,6 +143,9 @@ These exercises helped me understand how password security can be tested and why
 - **Week:** 03
 - **Project:** Password Cracking
 - **Modules:** Project Module 1 & Project Module 2
+
 ##
-  
- *All practical activities were performed as part of an authorized cybersecurity training exercise.*
+
+*All practical activities were performed as part of an authorized cybersecurity training exercise.*
+EOF
+
