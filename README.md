@@ -40,29 +40,29 @@ Recover passwords from password-protected PDF files using John the Ripper and Jo
 
 1. Hash Extraction
 
-[MyLockedPDF1 Hash](screenshots/PM1-JTR/hash1.jpg)
+![PDF1 Hash Extraction](screenshots/hash1.jpg)
 
 2. Password Cracked using Johnny (password: `password1`)
 
-![PDF1 Johnny Result](screenshots/PM1-JTR/findpass1.jpg)
+![PDF1 Johnny Result](screenshots/findpass1.jpg)
 
 3. Password Verified — Flag Captured
 
-[PDF1 Flag Captured](screenshots/PM1-JTR/locked1.jpg)
+![PDF1 Flag Captured](screenshots/locked1.jpg)
 
 **PDF 2**
 
 4. Hash Extraction
 
-[PDF2 Hash](screenshots/PM1-JTR/hash2.jpg)
+![PDF2 Hash](screenshots/hash2.jpg)
 
 5. Password Cracked using Johnny (password: `good-luck`)
 
-[PDF2 Johnny Result](screenshots/PM1-JTR/findpass2.jpg)
+![PDF2 Johnny Result](screenshots/findpass2.jpg)
 
 6. Password Verified — Flag Captured
 
-[PDF2 Flag Captured](screenshots/PM1-JTR/locked2.jpg)
+![PDF2 Flag Captured](screenshots/locked2.jpg)
 
 ### Result
 Successfully performed password cracking on both protected PDF files using John the Ripper through Johnny GUI.
@@ -92,29 +92,29 @@ Recover the passwords of protected PDF files using the NetworkWalks Hash Calcula
 
 1. Hash Extraction
 
-[Hash Calculator Result](screenshots/PM2-NW/PM2hash1.jpg)
+![Hash Calculator Result](screenshots/PM2hash1.jpg)
 
 2. Password Cracked (password: `password1`)
 
-[Password Cracker Result](screenshots/PM2-NW/PM2findpass3.jpg)
+![Password Cracker Result](screenshots/PM2findpass3.jpg)
 
 3. Flag Captured
 
-[Flag Captured](screenshots/PM2-NW/unlock1.jpg)
+![Flag Captured](screenshots/unlock1.jpg)
 
 **PDF (2nd file)**
 
 4. Hash Extraction
 
-[Hash Calculator Result](screenshots/PM2-NW/PM2hash2.jpg)
+![Hash Calculator Result](screenshots/PM2hash2.jpg)
 
 5. Password Cracked (password: `1qaz2wsx`)
 
-[Password Cracker Result](screenshots/PM2-NW/PM2findpass4.jpg)
+![Password Cracker Result](screenshots/PM2findpass4.jpg)
 
 6. Flag Captured
 
-[Flag Captured](screenshots/PM2-NW/unlock2.jpg)
+![Flag Captured](screenshots/unlock2.jpg)
 
 ### Result
 Successfully recovered both PDF passwords and captured the completion flags using NetworkWalks online tools.
